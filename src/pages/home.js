@@ -33,7 +33,6 @@ const Home = () => {
     console.log(error);
     return <div> Error in loading the data! </div>;
   }
-  console.log(data.noteFeed);
   return (
     <div>
       <Notes notes={data.noteFeed.notes} />

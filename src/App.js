@@ -9,8 +9,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "apollo-link-context";
 import GlobalStyle from "./components/GlobalStyle";
-require('dotenv').config();
-console.log(process.env)
+
 const httpLink = createHttpLink({ uri: process.env.REACT_APP_API_URI });
 const authLink = setContext((_, { headers }) => {
   return {

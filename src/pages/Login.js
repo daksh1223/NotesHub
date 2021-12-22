@@ -16,7 +16,6 @@ export default function Login(props) {
 
   if(location.state && location.state.from)
    redirect_url = location.state.from.pathname;
-  console.log(redirect_url);
   useEffect(() => {
     document.title = "Login";
   });

@@ -22,6 +22,5 @@ export default function Note_Page(props) {
   const { data, loading, error } = useQuery(note_query, { variables: { id } });
   if(loading) {return <div>Loading...</div>;}
   if(error) {return <div>Error!</div>;}
-  console.log(data);
   return <Note note={data.note}/>;
 }

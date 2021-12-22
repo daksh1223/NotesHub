@@ -9,7 +9,6 @@ export default function Mynotes() {
     document.title = "My Notes";
   });
   const { data, loading, error } = useQuery(GET_MY_NOTES);
-  console.log(data);
   return (
     <div>
       {loading && <div>Loading...</div>}

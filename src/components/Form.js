@@ -49,7 +49,6 @@ export default function Form(props) {
             props.action({
               variables: { ...values },
             });
-            console.log(values);
           }}
         >
           {props.type === "signup" ? <b>SignUp</b> : <b>Login</b>}
